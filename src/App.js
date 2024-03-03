@@ -4,13 +4,18 @@ import Accommodation from "./pages/Accommodation";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 
+import accommodationsData from "./data/data.json";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Homepage />} />
-        <Route path="homepage" element={<Homepage />} />
-        <Route path="accommodation" element={<Accommodation />} />
+        <Route index element={<Homepage accommodations={accommodationsData} />} />
+        <Route path="homepage" element={<Homepage accommodations={accommodationsData} />} />
+        <Route
+          path="accommodation"
+          element={<Accommodation accommodations={accommodationsData} />}
+        />
         <Route path="about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

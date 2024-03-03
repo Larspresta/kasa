@@ -1,4 +1,5 @@
 .main {
+  max-width: 100%;
   margin-top: 2rem;
   background-color: var(--color-ligth--1);
   border-radius: 25px;
