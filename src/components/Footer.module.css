@@ -1,0 +1,17 @@
+.footer {
+  margin: 2rem 0 0 0;
+  background-color: var(--color-dark--1);
+  max-width: 1440px;
+  height: 200px;
+}
+
+.footer img {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer p {
+  margin-top: 2.5rem;
+  color: white;
+  text-align: center;
+}
