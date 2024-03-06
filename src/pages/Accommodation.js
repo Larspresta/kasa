@@ -6,8 +6,8 @@ import styles from "./Accommodation.module.css";
 import PageNav from "../components/PageNav";
 import GallerySlider from "../components/GallerySlider";
 import TitleContainer from "../components/TitleContainer";
+import AccordionAccommodation from "../components/AccordionAccommodation";
 import Host from "../components/Host";
-import Accordion from "../components/Accordion";
 import Footer from "../components/Footer";
 
 function Accommodation({ accommodations }) {
@@ -36,9 +36,9 @@ function Accommodation({ accommodations }) {
         />
         <Host host={selectedAccommodation.host} rating={selectedAccommodation.rating} />
       </div>
-      <div>
-        {/* <Accordion description={selectedAccommodation.description} />
-        <Accordion equipements={selectedAccommodation.Amenities} /> */}
+      <div className={styles.infoContainer}>
+        <AccordionAccommodation title="Description" content={selectedAccommodation.description} />
+        <AccordionAccommodation title="Equipements" content={selectedAccommodation.Amenities} />
       </div>
       <Footer />
     </main>

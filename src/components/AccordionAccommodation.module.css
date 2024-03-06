@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.accordionSection {
+  width: 582px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+button {
+  border-radius: 15px;
+}
+
+.title {
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-brand--1);
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.content {
+  background-color: var(--color-ligth--1);
+  padding: 1.5rem;
+  color: var(--color-brand--1);
+  margin-top: -10px;
+}
+
+.content ul {
+  list-style: none;
+  text-align: left;
+}

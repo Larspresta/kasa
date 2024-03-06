@@ -1,4 +1,11 @@
 .hostContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
+}
+.infoContainer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }

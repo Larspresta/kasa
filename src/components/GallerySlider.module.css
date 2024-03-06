@@ -3,7 +3,6 @@
   margin: auto;
   height: 500px;
   max-width: 1240px;
-  overflow: hidden;
 }
 
 .gallerySlider img {
@@ -32,4 +31,12 @@
 }
 .sliderRight {
   right: 25px;
+}
+
+.imageIndex {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 1.1rem;
+  left: 50%;
 }
