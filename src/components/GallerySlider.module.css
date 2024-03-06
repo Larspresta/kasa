@@ -1,0 +1,35 @@
+.gallerySlider {
+  position: relative;
+  margin: auto;
+  height: 500px;
+  max-width: 1240px;
+  overflow: hidden;
+}
+
+.gallerySlider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.chevrons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sliderLeft,
+.sliderRight {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+}
+.sliderLeft {
+  left: 35px;
+}
+.sliderRight {
+  right: 25px;
+}

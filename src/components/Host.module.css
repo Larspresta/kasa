@@ -1,0 +1,25 @@
+.hostInfo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: var(--color-brand--1);
+}
+
+.hostImage {
+  height: 4rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.starEmpty,
+.starFilled {
+  font-size: 2rem;
+}
+
+.starFilled {
+  color: var(--color-brand--1);
+}
+
+.starEmpty {
+  color: #ccc;
+}

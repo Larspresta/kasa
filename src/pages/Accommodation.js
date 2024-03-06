@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import styles from "./Accommodation.module.css";
+
 import PageNav from "../components/PageNav";
 import GallerySlider from "../components/GallerySlider";
 import TitleContainer from "../components/TitleContainer";
@@ -25,14 +27,14 @@ function Accommodation({ accommodations }) {
   return (
     <main>
       <PageNav />
-      {/* <GallerySlider images={selectedAccommodation.pictures} /> */}
-      <div>
+      <GallerySlider images={selectedAccommodation.pictures} title={selectedAccommodation.title} />
+      <div className={styles.hostContainer}>
         <TitleContainer
           title={selectedAccommodation.title}
           location={selectedAccommodation.location}
           tags={selectedAccommodation.tags}
         />
-        <Host host={selectedAccommodation.host} />
+        <Host host={selectedAccommodation.host} rating={selectedAccommodation.rating} />
       </div>
       <div>
         {/* <Accordion description={selectedAccommodation.description} />
