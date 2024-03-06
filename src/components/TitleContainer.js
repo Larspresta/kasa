@@ -12,11 +12,11 @@ export default TitleContainer;
 
 function Tag({ tags }) {
   return (
-    <div>
+    <div className={styles.tagContainer}>
       {tags.map((tag, index) => (
-        <span key={index} className={styles.tag}>
+        <div key={index} className={styles.tag}>
           {tag}
-        </span>
+        </div>
       ))}
     </div>
   );
