@@ -13,7 +13,7 @@ function App() {
         <Route index element={<Homepage accommodations={accommodationsData} />} />
         <Route path="homepage" element={<Homepage accommodations={accommodationsData} />} />
         <Route
-          path="accommodation"
+          path="accommodation/:accommodationId"
           element={<Accommodation accommodations={accommodationsData} />}
         />
         <Route path="about" element={<About />} />

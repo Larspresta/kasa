@@ -5,13 +5,12 @@ import Main from "../components/Main";
 import PageNav from "../components/PageNav";
 
 function Homepage({ accommodations }) {
-  console.log(accommodations);
   return (
     <div>
       <PageNav />
       <HeroBanner />
       <Main>
-        <AccommodationList accommodations={accommodations}> </AccommodationList>
+        <AccommodationList accommodations={accommodations}></AccommodationList>
       </Main>
       <Footer />
     </div>
