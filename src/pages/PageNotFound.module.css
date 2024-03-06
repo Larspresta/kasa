@@ -1,0 +1,18 @@
+.pageNotFound {
+  color: var(--color-brand--1);
+}
+
+.pageNotFound h1 {
+  font-size: 12rem;
+  margin-top: 5rem;
+}
+
+.pageNotFound h2 {
+  font-size: 2rem;
+  margin-bottom: 20rem;
+}
+
+a:link,
+a:visited {
+  color: var(--color-brand--1);
+}
