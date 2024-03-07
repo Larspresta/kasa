@@ -2,17 +2,14 @@ import styles from "./Host.module.css";
 
 function Host({ host, rating }) {
   const ratingNum = Number(rating);
-  let stars = [];
 
-  for (let i = 0; i < 5; i++) {
-    stars.push(
-      i < ratingNum ? (
-        <span className={styles.starFilled}>★</span>
-      ) : (
-        <span className={styles.starEmpty}>☆</span>
-      )
+  const stars = Array.from({ length: 5 }, (_, i) => {
+    return (
+      <span key={i} className={i < ratingNum ? styles.starFilled : styles.starEmpty}>
+        {i < ratingNum ? "★" : "☆"}
+      </span>
     );
-  }
+  });
   return (
     <div>
       <div className={styles.hostInfo}>
