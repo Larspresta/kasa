@@ -9,6 +9,7 @@ import TitleContainer from "../components/TitleContainer";
 import AccordionAccommodation from "../components/AccordionAccommodation";
 import Host from "../components/Host";
 import Footer from "../components/Footer";
+import PageNotFound from "./PageNotFound";
 
 function Accommodation({ accommodations }) {
   let { accommodationId } = useParams();
@@ -21,7 +22,7 @@ function Accommodation({ accommodations }) {
   }, [accommodationId, accommodations]);
 
   if (!selectedAccommodation) {
-    return <div>Loading...</div>;
+    return <PageNotFound />;
   }
 
   return (
